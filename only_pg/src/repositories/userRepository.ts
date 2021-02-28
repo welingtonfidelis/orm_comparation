@@ -34,7 +34,7 @@ const methods = {
     
     const now = new Date();
     const query = {
-      text: 'INSERT INTO users (name, email, created_at, updated_at) values ($1, $2, $3, $4);',
+      text: 'INSERT INTO users (name, email, created_at, updated_at) values ($1, $2, $3, $4) RETURNING *;',
       values: [name, email, now, now]
     }
     await dbClient.query(query);
