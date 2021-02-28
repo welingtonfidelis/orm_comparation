@@ -9,7 +9,7 @@ Esse projeto foi construído como forma de testar e analisar algumas bibliotecas
 
 ## Instalação
 
-Após clonar este projeto, é necessário criar um banco de dados que será utilizado no projeto. Cada uma dos 4 exemplos de código possui um arquivo *index.ts* localizado em *src/database*, onde você pode alterar a configuração de conexão com suas as respectivas informações. 
+Após clonar este projeto, é necessário criar um banco de dados que será utilizado no projeto, pode executar o SQL na raíz deste projeto (*startsql.sql*). Cada uma dos 4 exemplos de código possui um arquivo *index.ts* localizado em *src/database*, onde você pode alterar a configuração de conexão com suas as respectivas informações. 
 Agora, conforme desejar executar cada um dos exemplos, acesse o diretório através de seu terminal de comandos e execute *npm install* para que as dependências necessárias ao projeto sejam baixadas. Em seguida, execute o comando *npm start* para que o servidor comece a executar na porta 3001 (pode ser alterada atráves do *src/server.ts*).
 Pronto, você já pode executar as requisições à API para testar o código.
 
