@@ -8,7 +8,7 @@ createConnection({
   database: 'ormcomparation',
   type: "postgres",
   synchronize: false,
-  logging: false,
+  logging: true,
   entities: [
     "src/models/*.ts"
   ]

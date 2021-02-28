@@ -24,7 +24,8 @@ const methods = {
     
     const now = new Date();
     const user = knex('users')
-      .insert({ name, email, created_at: now, updated_at: now });
+      .insert({ name, email, created_at: now, updated_at: now })
+      .returning("*");
 
     return user;
   },

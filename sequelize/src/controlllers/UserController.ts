@@ -38,7 +38,7 @@ class UserController {
       const { name, email } = req.body;
       const data = await userServices.store(name, email);
 
-      return res.status(201).send(data);
+      return res.status(201).send(utils.successResponse(data));
 
     } catch (error) {
       const { code, data } = utils.errorResponse(error);

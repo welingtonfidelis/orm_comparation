@@ -7,7 +7,8 @@ const connection = knex({
     user: 'root',
     password: 'root',
     database: "ormcomparation"
-  }
+  },
+  debug: true
 });
 
 export default connection;

@@ -14,7 +14,7 @@ const methods = {
     const respository = getRepository(User);
 
     const user = await respository.findOne({ id });
-
+    
     return user;
   },
 
@@ -31,7 +31,7 @@ const methods = {
     const repository = getRepository(User);
 
     const user = new User(id, name, email);
-    await repository.save(user);
+    await repository.update(id, user);
 
     return user;
   },
