@@ -1,7 +1,4 @@
-CREATE DATABASE ormcomparation
-    WITH 
-    OWNER = root
-    ENCODING = 'UTF8'
+CREATE DATABASE ormcomparation;
 
 create table users (
   id serial primary key,
